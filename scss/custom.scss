@@ -1,0 +1,11 @@
+/*
+ * @uthor: Ale Ruiz
+ * Theme: Las Monjas | Clínica Podológica
+ */
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./variables.scss";
+
+h2 {
+  color: $lmcp-blue;
+}
