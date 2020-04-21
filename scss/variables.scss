@@ -3,20 +3,16 @@
  * Theme: Las Monjas | Clínica Podológica
  */
 
-//$theme-colors: (
-//  "primary": $lmcp-blue,
-//  "dark": $lmcp-blue,
-//  "light": $lmcp-blue,
-//  "navbar-dark-color": $lmcp-blue,
-//  "navbar-light-color": $lmcp-blue,
-//);
-
 // Colors
 $lmcp-blue: #0077BB;
-$navbar-dark-color: $lmcp-blue;
-$navbar-light-color: $lmcp-blue;
 
-// Imports
-@import "../node_modules/bootstrap/scss/bootstrap";
+// Theming Bootstrap
+$theme-colors: (
+  "primary": $lmcp-blue,
+);
+
+
+$navbar-light-brand-color: $lmcp-blue;
+$navbar-light-color: $lmcp-blue;
 
 
