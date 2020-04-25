@@ -8,11 +8,84 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/font-awesome/scss/font-awesome.scss";
 
+// Header
 header {
+  .navbar-brand {
+    display: flex;
+    .cont-subname {
+      margin-left: 10px;
+      width: 75px;
+      @include media-breakpoint-up(sm) {
+        display: flex;
+        width: initial;
+      }
+      div {
+        overflow: hidden;
+        width: 75px;
+        padding-left: 10px;
+        border-left: 2px solid $lmcp-blue;
+        font-size: 0.5em;
+        @include media-breakpoint-up(sm) {
+          width: initial;
+          font-size: 1em;
+        }
+      }
+      & :last-child {
+        @include media-breakpoint-up(sm) {
+          border: 0;
+        }
+      }
+    }
+  }
   .cont-ima {
     overflow: hidden;
     width: 100%;
-    height: 75vh;
+    height: 50vh;
+  }
+  // Message slider
+  .carousel-caption {
+    position: absolute;
+    max-width: 30%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 20%;
+    z-index: 10;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: initial;
+    text-align: initial;
+    @include media-breakpoint-up(xs) {
+      /*border-color: orange;*/
+    }
+    @include media-breakpoint-up(sm) {
+      /*border-color: green;*/
+    }
+    @include media-breakpoint-up(md) {
+      /*border-color: blue;*/
+    }
+    @include media-breakpoint-up(lg) {
+      /*border-color: lightcoral;*/
+    }
+    @include media-breakpoint-up(xl) {
+      /*border-color: pink;*/
+    }
+    .cont-text {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h5 {
+        font-size: 2em;
+        font-weight: bolder;
+        color: #fff;
+      }
+      p {
+        font-size: 1.5em;
+        color: #ccc;
+      }
+    }
   }
 }
 
@@ -23,4 +96,19 @@ header {
     opacity: 0;
     transition: 0.3s ease-in 1s;
   }
+}
+
+// Services
+.cont-services {
+  border: 1px solid red;
+}
+
+// Location & Contact
+.map-container {
+  overflow: hidden;
+  height: 450px;
+}
+.map-container iframe {
+  height: 100%;
+  width: 100%;
 }
