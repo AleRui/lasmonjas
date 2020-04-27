@@ -12985,6 +12985,15 @@ header .overCarousel .slogan {
   background-color: #2c5784;
 }
 
+/* -- Back To Top -- */
+.back-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
 .no-mobile {
   display: none;
 }
