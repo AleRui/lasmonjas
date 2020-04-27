@@ -37,12 +37,40 @@ header {
       }
     }
   }
+  .navbar {
+    .navbar-nav {
+      .nav-item {
+        margin-left: 10px;
+      }
+      & :hover {
+        background-color: $lmcp-blue;
+        @include transition(background-color 0.8s);
+        .nav-link {
+          color: $lmcp-white;
+        }
+      }
+      & .active {
+        background-color: $lmcp-blue;
+      }
+    }
+  }
+  & .bg-light {
+    background-color: $lmcp-white !important;
+  }
   .cont-ima {
     overflow: hidden;
     width: 100%;
-    height: 50vh;
+    //height: 50vh;
   }
   // Message slider
+  .over-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: $lmcp-darkblue, $alpha: 0.4);
+    width: 100%;
+    height: 100%;
+  }
   .carousel-caption {
     position: absolute;
     max-width: 30%;
@@ -87,7 +115,45 @@ header {
       }
     }
   }
+  .overCarousel {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    max-width: 200px;
+    overflow: hidden;
+    flex-direction: column;
+    @include media-breakpoint-up(md) {
+      display: flex;
+    }
+    .free-space {
+      width: 100%;
+      height: 20px;
+      border-top: 4px solid $lmcp-blue;
+      background-color: rgba($color: $lmcp-white, $alpha: 0.2);
+    }
+    img {
+      //background-color: $lmcp-blue;
+      @include gradient-radial(
+        $inner-color: $lmcp-lightblue,
+        $outer-color: $lmcp-blue
+      );
+      max-width: 200px;
+    }
+    .slogan {
+      background-color: $lmcp-darkblue;
+      padding: 10px;
+      color: $lmcp-white;
+      text-align: center;
+    }
+  }
 }
+
+/* -- Fade -- */
+//.fade {
+//  opacity: 1;
+//}
+/* --      -- */
 
 #preload {
   display: none;
@@ -98,9 +164,24 @@ header {
   }
 }
 
+// Sections
+.section-title {
+  color: $lmcp-blue;
+  &.light {
+    color: $lmcp-darkblue;
+  }
+}
+
 // Services
 .cont-services {
-  border: 1px solid red;
+  .card {
+    height: 100%;
+  }
+}
+
+// History
+.elemento {
+  background-color: #EEE;
 }
 
 // Location & Contact
@@ -111,4 +192,19 @@ header {
 .map-container iframe {
   height: 100%;
   width: 100%;
+}
+
+// Footer
+.cont-footer {
+  background-color: $lmcp-darkblue;
+}
+
+// All Elements
+.no-mobile {
+  @include media-breakpoint-up(xs) {
+    display: none;
+  }
+  @include media-breakpoint-up(sm) {
+    /*border-color: green;*/
+  }
 }

@@ -25,7 +25,7 @@
     <!-- Header-->
     <header>
       <div class="container-fluid">
-        <div class="row">
+        <div class="row mt-3 mb-3">
           <div class="col-12 fila p-0 m-0">
             <nav
               class="navbar navbar-expand-lg navbar-light bg-light justify-content-between"
@@ -68,18 +68,30 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Servicios</a>
+                    <a class="nav-link" href="#services">Servicios</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Historia</a>
+                    <a class="nav-link" href="#history">Historia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Ubicación</a>
+                    <a class="nav-link" href="#location">Ubicación</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#location">Contacto</a>
                   </li>
                 </ul>
+              </div>
+              <div
+                class="d-xs-block d-sm-none d-md-none d-lg-none mt-3 p-2 border rounded"
+              >
+                <a href="tel:+34952502040">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span>Pulsa aquí para llamar</span> 952 50 20 40
+                </a>
+              </div>
+              <div class="d-xs-none d-sm-block p-3 no-mobile">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                952 50 20 40
               </div>
             </nav>
           </div>
@@ -99,25 +111,28 @@
                   <div class="cont-ima">
                     <img
                       class="d-block w-100"
-                      src="http://localhost/lasmonjas/assets/img/image_fetts_01.jpg"
+                      src="./assets/img/image-fetts-01-2048x1152.jpg"
                       alt="First slide"
                     />
                   </div>
+                  <div class="over-bg"></div>
                   <div class="carousel-caption d-none d-md-block">
                     <div class="cont-text">
-                      <h5>Titulo imagen</h5>
-                      <p>Algo que contar</p>
+                      <h5>Servicio podológico</h5>
+                      <p>Ciudamos de las personas desde 1973</p>
                     </div>
                   </div>
                 </div>
+                <!-- -->
                 <div class="carousel-item">
                   <div class="cont-ima">
                     <img
                       class="d-block w-100"
-                      src="http://localhost/lasmonjas/assets/img/image_feets_02.jpg"
+                      src="./assets/img/image-feets-02-2048x1152.jpg"
                       alt="Second slide"
                     />
                   </div>
+                  <div class="over-bg"></div>
                   <div class="carousel-caption d-none d-md-block">
                     <div class="cont-text">
                       <h5>Titulo imagen</h5>
@@ -125,14 +140,16 @@
                     </div>
                   </div>
                 </div>
+                <!-- -->
                 <div class="carousel-item">
                   <div class="cont-ima">
                     <img
                       class="d-block w-100"
-                      src="http://localhost/lasmonjas/assets/img/image_feets_03.jpg"
+                      src="./assets/img/image-feets-03-2048x1152.jpg"
                       alt="Thirn slide"
                     />
                   </div>
+                  <div class="over-bg"></div>
                   <div class="carousel-caption d-none d-md-block">
                     <div class="cont-text">
                       <h5>Titulo imagen</h5>
@@ -142,24 +159,40 @@
                 </div>
               </div>
             </div>
+            <!-- End Carousel -->
+            <div class="shadow overCarousel">
+              <div class="free-space"></div>
+              <img
+                src="./assets/svg/logo_clinica_podologica_las_monjas_white.svg"
+                alt="Lodo de Clñinica las Monjas"
+              />
+              <div class="slogan pb-5">
+                <i>"Cuidando del bienestar de tí y de los tuyos"</i>
+              </div>
+            </div>
+            <!-- Over Carousel -->
           </div>
         </div>
+        <!-- End row Carousel -->
       </div>
     </header>
 
     <!-- Content Services -->
-    <div class="container p-sm-1 p-md-3 p-lg-5 p-xl-5 cont-services">
-      <div class="row">
+    <div
+      id="services"
+      class="container p-sm-1 p-md-3 p-lg-5 p-xl-5 cont-services"
+    >
+      <div class="row mr-3 mb-3">
         <div class="col-12 text-center">
-          <h2>Servicios</h2>
+          <h2 class="section-title">Servicios</h2>
         </div>
       </div>
       <div class="row">
         <!-- Col with Card 1-->
-        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-5">
           <div class="card">
             <img
-              src="./assets/img/serv-01-quiropodia.jpg"
+              src="./assets/img/serv-01-quiropodia-528x297.jpg"
               class="card-img-top"
               alt="Imagen practicando una quiropidia"
             />
@@ -173,10 +206,10 @@
           </div>
         </div>
         <!-- Col with Card 2-->
-        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-5">
           <div class="card">
             <img
-              src="./assets/img/serv-02-est-pisada.jpg"
+              src="./assets/img/serv-02-est-pisada-528x297.jpg"
               class="card-img-top"
               alt="Estudio biomecánico de la pisada"
             />
@@ -190,10 +223,10 @@
           </div>
         </div>
         <!-- Col with Card 3-->
-        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-5">
           <div class="card">
             <img
-              src="./assets/img/serv-03-plantilla-a-medida.jpg"
+              src="./assets/img/serv-03-plantilla-a-medida-528-297.jpg"
               class="card-img-top"
               alt="Plantillas a medida"
             />
@@ -207,10 +240,10 @@
           </div>
         </div>
         <!-- Col with Card 4-->
-        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-5">
           <div class="card">
             <img
-              src="./assets/img/serv-04-ortesis-silicona.jpg"
+              src="./assets/img/serv-04-ortesis-silicona-528x297.jpg"
               class="card-img-top"
               alt="Imágen de una ortesis de silicona"
             />
@@ -224,10 +257,10 @@
           </div>
         </div>
         <!-- Col with Card 5-->
-        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-5">
           <div class="card">
             <img
-              src="./assets/img/serv-05-unia-encarnada.jpg"
+              src="./assets/img/serv-05-unia-encarnada-528x297.jpg"
               class="card-img-top"
               alt="Imágenes de cirugía de una uña encarnada."
             />
@@ -241,37 +274,75 @@
           </div>
         </div>
         <!-- Col with Card 6-->
-        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-          <div class="card">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <!-- Card in laptop -->
+          <div class="card d-sm-none d-md-none d-lg-block">
+            <div class="row">
+              <div class="col-6">
+                <img
+                  src="./assets/img/serv-06-pie-diabetico-528x297.jpg"
+                  class="card-img-top"
+                  alt="Tratamiento pie diabético"
+                />
+                <ul class="list-group">
+                  <li class="list-group-item p-2">Valoración de riesgo.</li>
+                  <li class="list-group-item p-2">Exloración neurológica.</li>
+                  <li class="list-group-item p-2">Sensibilidad táctil.</li>
+                  <li class="list-group-item p-2">Sensibilidad vibraoria.</li>
+                  <li class="list-group-item p-2">Exploración vascular.</li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <div class="card-body p-2">
+                  <h5 class="card-title">
+                    Exploración y tratamiento del pie diabético
+                  </h5>
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item p-2">Pulsos.</li>
+                  <li class="list-group-item p-2">Temperaura.</li>
+                  <li class="list-group-item p-2">Trastornos tróficos.</li>
+                  <li class="list-group-item p-2">
+                    Flujo mediante doppler y eco doppler.
+                  </li>
+                  <li class="list-group-item p-2">Oscilometría.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Card in mobile -->
+          <div class="card d-sm-bloxk d-md-block d-lg-none">
             <img
-              src="./assets/img/serv-06-pie-diabetico.jpg"
+              src="./assets/img/serv-06-pie-diabetico-528x297.jpg"
               class="card-img-top"
               alt="Tratamiento pie diabético"
             />
-            <div class="card-body">
+            <div class="card-body p-2">
               <h5 class="card-title">
                 Exploración y tratamiento del pie diabético
               </h5>
-              <ul class="list-group">
-                <li class="list-group-item">Valoración de riesgo.</li>
-                <li class="list-group-item">Exloración neurológica.</li>
-                <li class="list-group-item">Sensibilidad táctil.</li>
-                <li class="list-group-item">Sensibilidad vibraoria.</li>
-                <li class="list-group-item">Exploración vascular.</li>
-                <li class="list-group-item">Pulsos.</li>
-                <li class="list-group-item">Temperaura.</li>
-                <li class="list-group-item">Trastornos tróficos.</li>
-                <li class="list-group-item">Flujo mediante doppler y eco doppler.</li>
-                <li class="list-group-item">Oscilometría.</li>
-              </ul>
             </div>
+            <ul class="list-group">
+              <li class="list-group-item p-2">Valoración de riesgo.</li>
+              <li class="list-group-item p-2">Exloración neurológica.</li>
+              <li class="list-group-item p-2">Sensibilidad táctil.</li>
+              <li class="list-group-item p-2">Sensibilidad vibraoria.</li>
+              <li class="list-group-item p-2">Exploración vascular.</li>
+              <li class="list-group-item p-2">Pulsos.</li>
+              <li class="list-group-item p-2">Temperaura.</li>
+              <li class="list-group-item p-2">Trastornos tróficos.</li>
+              <li class="list-group-item p-2">
+                Flujo mediante doppler y eco doppler.
+              </li>
+              <li class="list-group-item p-2">Oscilometría.</li>
+            </ul>
           </div>
         </div>
         <!-- Col with Card 7-->
-        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-5">
           <div class="card">
             <img
-              src="./assets/img/serv-07-ecografia.jpg"
+              src="./assets/img/serv-07-ecografia-528x297.jpg"
               class="card-img-top"
               alt="Ecografía de alta resoución."
             />
@@ -289,11 +360,13 @@
     </div>
     <!-- -->
     <!-- History -->
-    <!-- Content Services -->
-    <div class="container-fluid p-sm-1 p-md-3 p-lg-5 p-xl-5">
+    <div
+      id="history"
+      class="container-fluid p-sm-1 p-md-3 p-lg-5 p-xl-5 elemento"
+    >
       <div class="row">
-        <div class="col-12 text-center">
-          <h2>Sobre nosotros</h2>
+        <div class="col-12 text-center mb-4">
+          <h2 class="section-title light">Sobre nosotros</h2>
         </div>
       </div>
       <div class="row">
@@ -333,7 +406,12 @@
       </div>
     </div>
     <!-- Contact and Location -->
-    <div class="container-fluid p-sm-1 p-md-3 p-lg-5 p-xl-5">
+    <div id="location" class="container-fluid p-sm-1 p-md-3 p-lg-5 p-xl-5">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <h2 class="section-title">Contacto y Localización</h2>
+        </div>
+      </div>
       <div class="row">
         <!-- Contact -->
         <div class="col-sm-12 col-md-4">
@@ -344,7 +422,7 @@
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                Teléfono: 676 676 676
+                Teléfono: 952 50 20 40
               </li>
               <li class="list-group-item">Dapibus ac facilisis in</li>
               <li class="list-group-item">Vestibulum at eros</li>
@@ -378,6 +456,7 @@
     <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/fadeInScroll.js"></script>
     <script src="./js/custom.js"></script>
   </body>
 </html>

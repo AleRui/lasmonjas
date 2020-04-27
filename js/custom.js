@@ -5,7 +5,22 @@ $(window).on("load", function () {
   $("#preload").addClass("loaded");
 });
 
-$(document).ready(function () {
+$(document).ready(() => {
   console.log("Finalizada Carga");
+
   $("#preload").remove();
+
+  var positionFade = $(".elemento").position();
+  console.log(positionFade.top);
+  console.log($(window).height());
+
+  $(window).scroll(() => {
+    //console.log(window.scrollY);
+    if (this.scrollY + $(this).height() > positionFade.top) {
+      console.log("Ahora");
+    }
+  });
+  //
 });
+
+/* -- Fade In -- */

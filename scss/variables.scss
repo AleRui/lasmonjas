@@ -1,9 +1,36 @@
 // Colors
 $lmcp-blue: #0077bb;
+$lmcp-lightblue: #5688c7;
+$lmcp-darkblue: #2c5784;
+$lmcp-white: #ffffff;
 
 // Theming Bootstrap
 $theme-colors: (
   "primary": $lmcp-blue,
 );
+
 $navbar-light-brand-color: $lmcp-blue;
+$navbar-light-brand-hover-color: $lmcp-lightblue;
 $navbar-light-color: $lmcp-blue;
+$navbar-light-active-color: $lmcp-white;
+$navbar-light-hover-color: $lmcp-white;
+
+$card-color: $lmcp-darkblue;
+
+$enable-gradients: true;
+$enable-shadows: true;
+
+// Mixin
+@mixin transition($transition...) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+
+
+@mixin gradient-radial($inner-color: #555, $outer-color: #333) {
+  background-image: -webkit-radial-gradient(circle, $inner-color, $outer-color);
+  background-image: radial-gradient(circle, $inner-color, $outer-color);
+  background-repeat: no-repeat;
+}
