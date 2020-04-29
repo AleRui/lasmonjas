@@ -6,7 +6,6 @@ $(window).on("load", function () {
 });
 
 /* Back to Top */
-
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
@@ -32,7 +31,6 @@ $(document).ready(function () {
   }
 });
 
-
 /* Fade In elements on Scroll */
 
 $(document).ready(() => {
@@ -56,26 +54,20 @@ $(document).ready(() => {
 });
 
 /* Add Smooth Scrolling */
-
 $(document).ready(function () {
-  $("a").on("click", function (event) {
-    if (this.hash !== "") {
-      event.preventDefault();
+  $(".smoothScroll").each(function () {
+    $(this).click(function (event) {
+      var href = $(this).attr("href");
 
-      var hash = this.hash;
+      if (href !== "" && href !== "undefined") {
+        event.preventDefault();
 
-      $("html, body").animate(
-        {
-          scrollTop: $(hash).offset().top,
-        },
-        800,
-        function () {
-          window.location.hash = hash;
-        }
-      );
-    } // End if
+        $("html, body").animate(
+          { scrollTop: $(href).offset().top },
+          800,
+          () => (window.location.hash = href)
+        );
+      }
+    });
   });
 });
-
-
-/* -- Fade In -- */

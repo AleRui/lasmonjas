@@ -12851,9 +12851,18 @@ header .navbar .navbar-nav .active {
 header .bg-light {
   background-color: #ffffff !important;
 }
+header .margin-navbar-top {
+  margin-top: 113px;
+}
+@media (min-width: 576px) {
+  header .margin-navbar-top {
+    margin-top: 96px;
+  }
+}
 header .cont-ima {
   overflow: hidden;
   width: 100%;
+  height: 68vh;
 }
 header .over-bg {
   position: absolute;
@@ -12944,6 +12953,16 @@ header .overCarousel .slogan {
   color: #ffffff;
   text-align: center;
 }
+header .carouselTextMobile .carousel-item {
+  padding: 10px 50px;
+}
+header .carouselTextMobile .carousel-item .cont-carousel-text-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 150px;
+}
 
 /* -- Fade -- */
 /* --      -- */
@@ -12963,12 +12982,32 @@ header .overCarousel .slogan {
   color: #2c5784;
 }
 
+.cont-director .director {
+  font-family: "monaco", "monospace";
+  font-size: 1.2em;
+  color: #0077bb;
+}
+.cont-director .numcol {
+  font-family: "monaco", "monospace";
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+.cont-director .skill {
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: #2c5784;
+}
+.cont-director .cont-icon {
+  color: #0077bb;
+  font-size: 4em;
+}
+
 .cont-services .card {
   height: 100%;
 }
 
 .elemento {
-  background-color: #EEE;
+  background-color: #eee;
 }
 
 .map-container {
@@ -12992,6 +13031,10 @@ header .overCarousel .slogan {
   bottom: 20px;
   right: 20px;
   display: none;
+}
+
+.border-left-blue {
+  border-left: 4px solid #0077bb;
 }
 
 .no-mobile {
