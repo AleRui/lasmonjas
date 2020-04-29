@@ -57,6 +57,14 @@ header {
   & .bg-light {
     background-color: $lmcp-white !important;
   }
+  .nav-schudle {
+      color: $lmcp-darkblue;
+    @include media-breakpoint-up(lg) {
+      font-size: 0.8em;
+      display: flex;
+      flex-direction: column;
+    }
+  }
   .margin-navbar-top {
     margin-top: 113px;
     @include media-breakpoint-up(sm) {
@@ -66,7 +74,14 @@ header {
   .cont-ima {
     overflow: hidden;
     width: 100%;
-    height: 68vh;
+    @include media-breakpoint-up(lg) {
+      border-color: lightcoral;
+        height: 61vh;
+    }
+    @include media-breakpoint-up(xl) {
+      border-color: pink;
+        height: 68vh;
+    }
   }
   // Message slider
   .over-bg {
@@ -117,7 +132,7 @@ header {
       }
       p {
         font-size: 1.5em;
-        color: #ccc;
+        color: #d5d5d5;
       }
     }
   }
@@ -155,7 +170,7 @@ header {
   }
   .carouselTextMobile {
     .carousel-item {
-        padding: 10px 50px;
+      padding: 10px 50px;
       .cont-carousel-text-mobile {
         display: flex;
         flex-direction: column;
@@ -192,26 +207,25 @@ header {
 
 // Director Clinic
 .cont-director {
-    .director {
-        font-family: 'monaco', 'monospace';
-        font-size: 1.2em;
-        color: $lmcp-blue;
-
-    }
-    .numcol {
-        font-family: 'monaco', 'monospace';
-        font-size: 1.2em;
-        font-weight: bolder;
-    }
-    .skill {
-        font-size: 1.2em;
-        font-weight: bolder;
-        color: $lmcp-darkblue;
-    }
-    .cont-icon {
-        color: $lmcp-blue;
-        font-size: 4em;
-    }
+  .director {
+    font-family: "monaco", "monospace";
+    font-size: 1.2em;
+    color: $lmcp-blue;
+  }
+  .numcol {
+    font-family: "monaco", "monospace";
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+  .skill {
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: $lmcp-darkblue;
+  }
+  .cont-icon {
+    color: $lmcp-blue;
+    font-size: 4em;
+  }
 }
 
 // Services
@@ -240,6 +254,9 @@ header {
 // Footer
 .cont-footer {
   background-color: $lmcp-darkblue;
+  .logo-colegio {
+    width: 80%;
+  }
 }
 
 /* -- Back To Top -- */
@@ -252,8 +269,18 @@ header {
 }
 
 // All Elements
-.border-left-blue{
-    border-left: 4px solid $lmcp-blue;
+.border-left-blue {
+  border-left: 4px solid $lmcp-blue;
+}
+.m-row-tb-mobile {
+  @include media-breakpoint-up(xs) {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  @include media-breakpoint-up(sm) {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 }
 .no-mobile {
   @include media-breakpoint-up(xs) {
