@@ -12862,7 +12862,7 @@ header .nav-schudle {
   }
 }
 header .margin-navbar-top {
-  margin-top: 113px;
+  margin-top: 192px;
 }
 @media (min-width: 576px) {
   header .margin-navbar-top {
@@ -13031,6 +13031,10 @@ header .carouselTextMobile .carousel-item .cont-carousel-text-mobile {
   background-color: #eee;
 }
 
+.adv-shudler {
+  font-size: 0.8em;
+}
+
 .map-container {
   overflow: hidden;
   height: 450px;
@@ -13045,7 +13049,13 @@ header .carouselTextMobile .carousel-item .cont-carousel-text-mobile {
   background-color: #2c5784;
 }
 .cont-footer .logo-colegio {
-  width: 80%;
+  max-width: 80%;
+}
+.cont-footer .credits {
+  font-size: 0.7em;
+}
+.cont-footer .credits h6 {
+  font-size: 1em;
 }
 
 /* -- Back To Top -- */
