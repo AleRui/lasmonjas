@@ -1,8 +1,13 @@
-console.log(`Custom...`);
+/**
+ * Custom.js
+ * @author: Ale Ruiz
+ */
 
 $(window).on("load", function () {
-  console.log("Cargando...");
   $("#preload").addClass("loaded");
+});
+$(document).ready(() => {
+  $("#preload").remove();
 });
 
 /* Back to Top */
@@ -31,28 +36,6 @@ $(document).ready(function () {
   }
 });
 
-/* Fade In elements on Scroll */
-
-$(document).ready(() => {
-  console.log("Finalizada Carga");
-  $("#preload").remove();
-
-  //const elemento = $(".elemento");
-  //const elementoPosition = elemento.position().top;
-  //console.log(elemento);
-  //console.log(elementoPosition);
-  //
-  //$(window).scroll(() => {
-  //  console.log("Scrolling");
-  //  //if ($(this).scrollY + $(this).height() > elementoPosition) {
-  //    //console.log("Ahora");
-  //    //console.log("Elemento:" + elemento);
-  //    //$(this).animate({ opacity: "1" }, 1500);
-  //  //}
-  //});
-  //
-});
-
 /* Add Smooth Scrolling */
 $(document).ready(function () {
   $(".smoothScroll").each(function () {
@@ -68,6 +51,25 @@ $(document).ready(function () {
           () => (window.location.hash = href)
         );
       }
+    });
+  });
+});
+
+/**
+ * ANIMATIONS
+ */
+
+/* Fade In elements on Scroll */
+$(document).ready(() => {
+  var elementos = $(".fade-in");
+
+  $(window).scroll(() => {
+    var scrollY = $(this).scrollTop() + $(this).height();
+
+    $(elementos).each((index, elemento) => {
+      if (scrollY > $(elemento).position().top + 300) {
+		$(elemento).animate({ opacity: 1 }, 1500);
+	  }
     });
   });
 });

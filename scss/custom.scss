@@ -104,21 +104,21 @@ header {
     padding-bottom: 0;
     color: initial;
     text-align: initial;
-    @include media-breakpoint-up(xs) {
-      /*border-color: orange;*/
-    }
-    @include media-breakpoint-up(sm) {
-      /*border-color: green;*/
-    }
-    @include media-breakpoint-up(md) {
-      /*border-color: blue;*/
-    }
-    @include media-breakpoint-up(lg) {
-      /*border-color: lightcoral;*/
-    }
-    @include media-breakpoint-up(xl) {
-      /*border-color: pink;*/
-    }
+    //@include media-breakpoint-up(xs) {
+      //border-color: orange;
+    //}
+    //@include media-breakpoint-up(sm) {
+      //border-color: green;
+    //}
+    //@include media-breakpoint-up(md) {
+      //border-color: blue;
+    //}
+    //@include media-breakpoint-up(lg) {
+      //border-color: lightcoral;
+    //}
+    //@include media-breakpoint-up(xl) {
+      //border-color: pink;
+    //}
     .cont-text {
       width: 100%;
       height: 100%;
@@ -154,7 +154,6 @@ header {
       background-color: rgba($color: $lmcp-white, $alpha: 0.2);
     }
     img {
-      //background-color: $lmcp-blue;
       @include gradient-radial(
         $inner-color: $lmcp-lightblue,
         $outer-color: $lmcp-blue
@@ -182,10 +181,10 @@ header {
   }
 }
 
-/* -- Fade -- */
-//.fade {
-//  opacity: 1;
-//}
+/* -- Fade in Elemento -- */
+.fade-in {
+  opacity: 0;
+}
 /* --      -- */
 
 #preload {

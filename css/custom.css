@@ -12905,27 +12905,6 @@ header .carousel-caption {
   padding-bottom: 0;
   color: initial;
   text-align: initial;
-  /*border-color: orange;*/
-}
-@media (min-width: 576px) {
-  header .carousel-caption {
-    /*border-color: green;*/
-  }
-}
-@media (min-width: 768px) {
-  header .carousel-caption {
-    /*border-color: blue;*/
-  }
-}
-@media (min-width: 992px) {
-  header .carousel-caption {
-    /*border-color: lightcoral;*/
-  }
-}
-@media (min-width: 1200px) {
-  header .carousel-caption {
-    /*border-color: pink;*/
-  }
 }
 header .carousel-caption .cont-text {
   width: 100%;
@@ -12985,7 +12964,11 @@ header .carouselTextMobile .carousel-item .cont-carousel-text-mobile {
   min-height: 150px;
 }
 
-/* -- Fade -- */
+/* -- Fade in Elemento -- */
+.fade-in {
+  opacity: 0;
+}
+
 /* --      -- */
 #preload {
   display: none;
