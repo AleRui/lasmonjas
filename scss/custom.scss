@@ -1,6 +1,6 @@
 /*
  * @uthor: Ale Ruiz
- * Theme: Las Monjas | Clínica Podológica
+ * Theme: Las Monjas | Clínica Podológica ****
  */
 
 // Imports
@@ -64,6 +64,15 @@ header {
       display: flex;
       flex-direction: column;
     }
+  }
+  .text_schudele {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .schudele_more_info_btn{
+    @include media-breakpoint-up(sm) {
+        display: none;
+      }
   }
   .margin-navbar-top {
     margin-top: 192px;
@@ -298,4 +307,8 @@ header {
   @include media-breakpoint-up(sm) {
     /*border-color: green;*/
   }
+}
+
+.no-display {
+    display: none;
 }
