@@ -22,3 +22,8 @@ o archivos preferencias configuración extensiones Live Sass Compiler
         }
     ]
 ```
+
+# Despliegue
+- github - seetings
+- Build and deplyment
+    - Master | /docs PRESS 'Save'
