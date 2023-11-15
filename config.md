@@ -1,11 +1,10 @@
 # Instalar proyecto
-git clone git@github.com:AleRui/lasmonjas.git
+`git clone git@github.com:AleRui/lasmonjas.git`
 
 # Node debe estar instalado
 `node -v`
 `npm -v`
-* Hacer install
-`npm install`
+* Hacer install: `npm install`
 
 # Scss
 * vs code install plugin: `Live Sass Compiler`
