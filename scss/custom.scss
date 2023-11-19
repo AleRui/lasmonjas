@@ -1,6 +1,6 @@
 /*
  * @uthor: Ale Ruiz
- * Theme: Las Monjas | Clínica Podológica ***
+ * Theme: Las Monjas | Clínica Podológica **
  */
 
 // Imports
@@ -233,6 +233,9 @@ header {
   .cont-icon {
     color: $lmcp-blue;
     font-size: 4em;
+  }
+  .img_podologo {
+    border-right: 4px solid $lmcp-blue;
   }
 }
 
